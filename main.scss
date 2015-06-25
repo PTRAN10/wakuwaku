@@ -1,0 +1,45 @@
+// variables
+$base: 16px;
+$unit: $base*1.4;
+
+$white: #FFF;
+$yellow: #FFF332;
+$black: #000;
+
+// fonts
+@font-face { font-family: 'Brown'; font-weight: 400; font-style: normal; src: url('fonts/Brown-Regular.otf') format('truetype'); }
+@font-face { font-family: 'Brown'; font-weight: 400; font-style: italic; src: url('fonts/Brown-Regular-Italic.otf') format('truetype'); }
+@font-face { font-family: 'Brown'; font-weight: 700; font-style: normal; src: url('fonts/Brown-Bold.otf') format('truetype'); }
+
+// common
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; margin: 0; padding: 0; }
+body { background: url('bg.png'); font-weight: 400; font-size: $base; font-family: 'Brown', 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: $unit; color: $black; }
+
+a { color: darken($yellow, 30%); text-decoration: underline; }
+
+.wrap { text-align: center; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.header { padding: $unit*4; margin-bottom: $unit*4; background: $yellow; }
+.title { margin-bottom: $unit*2; }
+.logo { display: inline-block; }
+.subtitle { font-size: $base*2.25; }
+
+.content {}
+.text { max-width: $unit*28; margin: 0 auto $unit; font-size: $base*1.125; }
+#merci {
+  display: none;
+  width: $unit*22; margin: $unit*3 auto;
+  background: $yellow;
+  line-height: $unit*4; font-size: $base*2.25; font-weight: bold;
+  &:target { display: block; & ~ .form { display: none; }}
+}
+.form { margin: $unit*3 0; }
+.email {
+  width: $unit*20; padding: $unit;
+  border: 2px solid $black; border-radius: 4px; background: $white;
+  text-align: center;
+  font-family: 'Brown'; font-size: $base*1.5;
+}
+.contact { max-width: $unit*28; margin: auto; font-style: italic; }
+
+.footer { padding: $unit*4 0; }
+.copyright { }

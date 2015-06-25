@@ -2,8 +2,37 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>Wakuwaku</title>
+  <title>Wakuwaku, japanim' & vous !</title>
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="">
+  <!-- <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no"> -->
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
+
+  <main class="wrap">
+
+    <header class="header">
+      <h1 class="title"><img class="logo" src="logo.png" alt="Wakuwaku" width="400px" height="auto"></h1>
+      <h2 class="subtitle">Japanim' & vous !</h2>
+    </header>
+
+    <section class="content">
+      <p class="text">La communauté Wakuwaku ouvre bientôt ses portes ! Artistes, illustrations, montures… Tout pour rendre ton Waku unique, le petit écran <i>e-ink</i> personnalisable à l'infini !</p>
+      <p class="text">Renseigne ton email ci-dessous pour être tenu au courant (Wakuwaku n'abusera pas de ton adresse email, promis) :</p>
+      <p id="merci">Merci !! À très bientôt !</p>
+      <form class="form" action="//formspree.io/noclat@gmail.com" method="POST">
+        <input class="email" type="email" name="email" placeholder="exemple@email.com">
+        <input type="hidden" name="_next" value="http://www.wakuwaku.fr/#merci">
+      </form>
+      <p class="contact">Tu es illustrateur ou organisateur d'événéments de japanimation ?<br>Contacte-nous rapidement à <a href="mailto:contact@wakuwaku.fr">contact@wakuwaku.fr</a> !</p>
+    </section>
+
+    <footer class="footer">
+      <p class="copyright">©2015 — Wakuwaku par <a href="http://www.inkiprod.com" target="_blank">Inkiprod</a>.
+    </footer>
+
+  </main>
+
 </body>
 </html>
